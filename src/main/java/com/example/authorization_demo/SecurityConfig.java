@@ -44,8 +44,8 @@ public class SecurityConfig {
 //                        .requestMatchers("/v3/api-docs/**").permitAll()
                         .anyRequest().authenticated()
                 )
-                .httpBasic(Customizer.withDefaults())
-                .sessionManagement(manager -> manager.sessionCreationPolicy(STATELESS));
+                .httpBasic(Customizer.withDefaults());
+//                .sessionManagement(manager -> manager.sessionCreationPolicy(STATELESS));
 //                .authenticationProvider(authenticationProvider());
         return http.build();
     }
