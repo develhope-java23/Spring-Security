@@ -1,5 +1,7 @@
-package com.example.authorization_demo;
+package com.example.authorization_demo.accounts.controllers;
 
+import com.example.authorization_demo.accounts.services.AccountService;
+import com.example.authorization_demo.accounts.dtos.RegistrationDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

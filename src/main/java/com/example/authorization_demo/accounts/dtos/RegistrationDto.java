@@ -1,4 +1,4 @@
-package com.example.authorization_demo;
+package com.example.authorization_demo.accounts.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
