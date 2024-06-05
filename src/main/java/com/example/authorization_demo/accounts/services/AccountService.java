@@ -23,7 +23,7 @@ public class AccountService {
         Account account = new Account();
         account.setUsername(registrationDto.getUsername());
         account.setPassword(passwordEncoder.encode(registrationDto.getPassword()));
-        account.setRole(Roles.ADMIN);
+        account.setRole(registrationDto.getRole());
         accountRepository.save(account);
         return true;
     }
